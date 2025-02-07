@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGreen.MainMenu" NavigationPage.HasNavigationBar="False"
+             Title="MainMenu">
+    <VerticalStackLayout>
+        <Grid RowDefinitions=".3*,.7*" >
+            <!-- Imagen de fondo -->
+            <VerticalStackLayout>
+                <Image Source="fondo.jpg" Scale="1.4" Opacity=".8" Aspect="AspectFill" HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+            </VerticalStackLayout>
+
+            <!-- Logo -->
+            <Grid Grid.Row="1">
+                <RoundRectangle Margin="15,-160,15,-380"
+                CornerRadius="30,30,30,30"
+                Fill="White" Opacity=".4"/>
+                <Image Source="logooff.png" HeightRequest="180" Margin="0,-300,0,0"/>
+            </Grid>
+
+            <!-- Botones -->
+            <Grid Grid.Row="1" RowDefinitions="Auto, Auto" Margin="30,40,0,0">
+                <!-- Botón de 'view' alineado a la izquierda -->
+                <StackLayout Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center" Margin="0, 0, 0, 10">
+                    <ImageButton x:Name="view" Source="view.png" HeightRequest="150" WidthRequest="150"
+                             CornerRadius="10" Clicked="view_Clicked"
+                             HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <!-- Botón de 'add' alineado a la derecha -->
+                <StackLayout Grid.Row="1" HorizontalOptions="End" VerticalOptions="Center" Margin="0, -170, 30, 0">
+                    <ImageButton x:Name="add" Source="btnadd.jpg" HeightRequest="150" WidthRequest="150" 
+                             CornerRadius="10" 
+                             HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
