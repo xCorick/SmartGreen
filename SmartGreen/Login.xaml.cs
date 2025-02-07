@@ -11,4 +11,9 @@ public partial class Login : ContentPage
     {
 		await Navigation.PushAsync(new Register());
     }
+
+    private async void Recovery_Tapped(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new RecoveryPass());
+    }
 }
