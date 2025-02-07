@@ -16,4 +16,9 @@ public partial class Login : ContentPage
     {
         await Navigation.PushAsync(new RecoveryPass());
     }
+
+    private async void Btn_Menu(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MainMenu());
+    }
 }

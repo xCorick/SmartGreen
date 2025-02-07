@@ -30,7 +30,7 @@
                         <Entry Placeholder="Contraseña" IsPassword="True" Margin="0,0,10,0" HeightRequest="45" FontSize="20" />
                     </Grid>
 
-                    <Button Text="Iniciar sesión" BackgroundColor="#81b442" TextColor="White" HeightRequest="50" 
+                    <Button Text="Iniciar sesión" BackgroundColor="#81b442" TextColor="White" HeightRequest="50" Clicked="Btn_Menu"
                        Margin="50,30,50,0" CornerRadius="25" HorizontalOptions="FillAndExpand" FontSize="19" FontAttributes="Bold" />
                     
                     <Button Text="Crear una cuenta" BackgroundColor="#b5bca4" TextColor="White" HeightRequest="50" 
