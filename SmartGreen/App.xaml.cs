@@ -6,7 +6,8 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new FlyoutInicio());
+            MainPage = new NavigationPage(new MenuInvernaderos());
+            //MainPage = new NavigationPage(new Login());
         }
     }
 }
