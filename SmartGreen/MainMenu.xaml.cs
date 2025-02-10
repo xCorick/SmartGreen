@@ -9,6 +9,6 @@ public partial class MainMenu : ContentPage
 
     private async void view_Clicked(object sender, EventArgs e)
     {
-		await Navigation.PushAsync(new Login());
+		await Navigation.PushAsync(new NavigationPage(new MenuInvernaderos()));
     }
 }

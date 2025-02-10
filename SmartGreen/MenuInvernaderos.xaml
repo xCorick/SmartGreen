@@ -201,7 +201,8 @@
                             WidthRequest="400"
                             CornerRadius="30"
                             FontSize="Body"
-                            FontAttributes="Bold"/>
+                            FontAttributes="Bold"
+                            Clicked="Button_Clicked"/>
                         <Button BackgroundColor="White"
                             Text="Vivero 2"
                             TextColor="Black"
