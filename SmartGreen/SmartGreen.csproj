@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
@@ -64,6 +64,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+
 	  <Compile Update="Views\GreenHouseView.xaml.cs">
 	    <DependentUpon>GreenHouseView.xaml</DependentUpon>
 	  </Compile>
@@ -80,6 +81,23 @@
 
 	<ItemGroup>
 	  <Folder Include="Model\" />
+
+	  <MauiXaml Update="Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MainMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Recovery.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RecoveryPass.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Register.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+
 	</ItemGroup>
 
 </Project>
