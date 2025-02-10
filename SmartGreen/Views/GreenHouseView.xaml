@@ -9,7 +9,7 @@
     <ScrollView> 
     <AbsoluteLayout>
             <Image Source="back.png"
-                   WidthRequest="70"
+                   WidthRequest="50" Scale=".7"
                    AbsoluteLayout.LayoutFlags="PositionProportional">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding VolverCommand}" ></TapGestureRecognizer>
@@ -26,13 +26,12 @@
             AbsoluteLayout.LayoutFlags="PositionProportional"
             />
         <Label 
-            Text="Invernadero 1"
+            Text="Vivero 1" TextColor="Black"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            Padding="0,24,0,0"
-            FontSize="26"
-            FontAttributes="Bold"
-            AbsoluteLayout.LayoutBounds="0.5, 0.15"
+            FontSize="33"
+            FontAttributes="Bold" FontFamily="bold"
+            AbsoluteLayout.LayoutBounds="0.5, 0.13"
             AbsoluteLayout.LayoutFlags="PositionProportional"
         />
             <!-- Imagen de la planta -->
@@ -40,20 +39,27 @@
                CornerRadius="125"
                BorderColor="Transparent"
                HasShadow="False"
-               AbsoluteLayout.LayoutBounds="0.5, 0.35, 250, 250"
+               AbsoluteLayout.LayoutBounds="0.5, 0.33, 250, 250"
                AbsoluteLayout.LayoutFlags="PositionProportional">
                 <Image Source="plant.png" Aspect="AspectFill"/>
             </Frame>
 
             <!-- Marco circular (indicador de porcentaje) -->
             <GraphicsView
-            AbsoluteLayout.LayoutBounds="0.5, 0.35, 250, 250"
+            AbsoluteLayout.LayoutBounds="0.5, 0.33, 250, 250"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             Drawable="{Binding CircularProgressDrawable}" />
+        
+            <Label
+                Text="Húmedad actual:" FontAttributes="Bold" FontFamily="bold"
+                FontSize="25"
+                AbsoluteLayout.LayoutBounds="0.5, 0.56"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
 
             <!-- Texto del porcentaje -->
             <Label Text="{Binding HumedadPorcentaje}" 
-               FontSize="18"
+               FontSize="23"
                FontAttributes="Bold"
                TextColor="Black"
                HorizontalTextAlignment="Center"
@@ -64,8 +70,8 @@
             <Button 
             Text="Control de humedad" 
             Clicked="OnOpenPopupClicked"
-            VerticalOptions="End"
-                Margin="90,0,90,0"
+            VerticalOptions="End" FontAttributes="Bold"
+                 Margin="90,0,90,0"
                 CornerRadius="25"
                 HeightRequest="50"
                 FontSize="20"
