@@ -11,23 +11,27 @@
            BackgroundColor="White"
            Padding="20"
            CornerRadius="20"
-           HeightRequest="400"
+           HeightRequest="380"
            VerticalOptions="End"
            TranslationY="400"
            HorizontalOptions="CenterAndExpand">
         
-        <Grid x:Name="Overlay" BackgroundColor="Black" Opacity="1">
+        <Grid x:Name="Overlay" BackgroundColor="Black" Opacity="1" >
             <!--<Grid.GestureRecognizers>
                     <TapGestureRecognizer Tapped="CloseSheet"/>
                 </Grid.GestureRecognizers>-->
 
-            <VerticalStackLayout Padding="20" BackgroundColor="White">
-            <Label Text="Control de humedad" FontSize="20" HorizontalOptions="Center"/>
-            <Image Source="drop.png" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center"/>
-            <Label x:Name="HumidityLabel" Text="Humedad 45%" FontSize="16" HorizontalOptions="Center"/>
+            <VerticalStackLayout  BackgroundColor="White">
+            <Label Text="Control de humedad" FontSize="24" HorizontalOptions="Center"
+                   FontAttributes="Bold" FontFamily="bol    "/>
+            <Image Source="humedad.png" HeightRequest="110" WidthRequest="340" HorizontalOptions="Center" Margin="0,15,0,15"/>
+            <Label x:Name="HumidityLabel" Text="Humedad 45%" FontSize="20" HorizontalOptions="Center"
+                   FontAttributes="Bold" />
             <Slider x:Name="HumiditySlider" Minimum="0" Maximum="100" Value="45"
-                    ValueChanged="OnSliderValueChanged"/>
-                <Button Text="Guardar" Clicked="CloseSheet"/>
+                    ValueChanged="OnSliderValueChanged" Margin="0,15,0,15"/>
+                <Button Text="Guardar" Clicked="CloseSheet" CornerRadius="25" 
+                        FontSize="20" BackgroundColor="#88ACC7" HeightRequest="50" FontFamily="bold"
+                        Margin="50,0,50,0"/>
             </VerticalStackLayout>
         </Grid>
     </Frame>
