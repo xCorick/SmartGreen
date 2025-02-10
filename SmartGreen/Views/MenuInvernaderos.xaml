@@ -99,12 +99,18 @@
                    HeightRequest="20" WidthRequest="20"
                    VerticalOptions="Center"
                    Margin="20,0,0,0"/>
-                            <Label Grid.Row="3" Grid.Column="1"
-                   Text="Notificaciones"
-                   FontSize="16"
-                   TextColor="Black"
-                   VerticalOptions="Center"
-                   Margin="50,0,0,0"/>
+                            <Button Grid.Row="3" Grid.Column="1"
+                                    x:Name="btnNotify"
+                                    Text="Notificaciones"
+                                    FontSize="16"
+                                    TextColor="Black"
+                                    VerticalOptions="Center"
+                                    Margin="50,0,0,0"
+                                    Background="Transparent"
+                                    HorizontalOptions="Start"
+                                    Padding="0"
+                                    Clicked="btnNotify_Clicked"
+                                   />
 
                             <Image Grid.Row="4" Grid.Column="0"
                    Source="est.png"
@@ -216,6 +222,7 @@
                 </ScrollView>
 
                 <Button BackgroundColor="White"
+                        x:Name="AddGreenHouse"
                     CornerRadius="20"
                     Padding="5"
                     WidthRequest="50"
@@ -224,7 +231,8 @@
                     VerticalOptions="End"
                     Margin="20"
                     ImageSource="mas.png"
-                    TextColor="Black"/>
+                    TextColor="Black"
+                        Clicked="AddGreenHouse_Clicked"/>
             </Grid>
         </ContentPage>
     </FlyoutPage.Detail>

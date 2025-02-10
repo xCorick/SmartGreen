@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartGreen.Views.NotificationPageView"
+             Title="">
+    <StackLayout Padding="10" BackgroundColor="#EFEAD8">
+        <Label Text="Notificaciones"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               FontSize="25"
+               Padding="0,10,0,20"
+            />
+
+        <!-- Barra de búsqueda -->
+        <Frame CornerRadius="25"
+               HeightRequest="60"
+               HorizontalOptions="Center"
+               Padding="0,5,0,0">
+            <SearchBar Placeholder="Search" 
+                       />
+
+        </Frame>
+
+        <!-- Lista de notificaciones -->
+        <CollectionView ItemsSource="{Binding Notificaciones}"
+                        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="5" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <!-- Imagen del avatar -->
+                            <Image Source="user_icon.png" WidthRequest="40" HeightRequest="40" Grid.Column="0" />
+
+                            <!-- Texto de la notificación -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="2">
+                                <Label Text="{Binding Titulo}" FontAttributes="Bold" TextColor="Black" />
+                                <Label Text="{Binding Mensaje}" FontSize="14" TextColor="Gray" />
+                            </VerticalStackLayout>
+
+                            <!-- Hora -->
+                            <Label Text="{Binding Hora}" FontSize="12" TextColor="Gray" Grid.Column="2" VerticalOptions="Center" />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Image Source="casa.png"
+               VerticalOptions="End"
+               HorizontalOptions="End"
+               HeightRequest="75"
+               WidthRequest="75">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding HomeCommand}"></TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
+    </StackLayout>
+</ContentPage>

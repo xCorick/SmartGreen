@@ -11,4 +11,9 @@ public partial class RecoveryPass : ContentPage
     {
 		await Navigation.PushAsync(new Login());
     }
+
+    private async void btnCorreo_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new NavigationPage(new Recovery()));
+    }
 }

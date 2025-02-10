@@ -27,8 +27,9 @@
                     <Entry Placeholder="Correo electrónico" Margin="0,10,10,0" HeightRequest="45" FontSize="20" />
                 </Grid>
 
-                <Button Text="Enviar correo" BackgroundColor="#81b442" TextColor="White" HeightRequest="50" 
-                     Margin="50,20,50,0" CornerRadius="25" HorizontalOptions="FillAndExpand" FontSize="20" />
+                <Button x:Name="btnCorreo" Text="Enviar correo" BackgroundColor="#81b442" TextColor="White" HeightRequest="50" 
+                     Margin="50,20,50,0" CornerRadius="25" HorizontalOptions="FillAndExpand" FontSize="20"
+                        Clicked="btnCorreo_Clicked"/>
 
                 <Label Text="Volver al inicio de sesión" TextColor="Black" FontSize="14"
                     HorizontalOptions="Center" TextDecorations="Underline" Margin="0,10,0,0">
