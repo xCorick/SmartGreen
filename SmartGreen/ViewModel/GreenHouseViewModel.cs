@@ -10,9 +10,15 @@ namespace SmartGreen.ViewModel
 {
     public class GreenHouseViewModel : BaseViewModel
     {
-        public string estadoFlujo { get; set; } = "Iniciar riego";
+        private string _estadoFlujo = "Iniciar riego";
         public string HumedadPorcentaje { get; set; } = "45%"; // Ejemplo del porcentaje
         public IDrawable CircularProgressDrawable { get; set; } = new CircularProgressDrawable(1f);
+
+        public string EstadoFlujo
+        {
+            get { return _estadoFlujo; }
+            set { SetValue(ref _estadoFlujo, value); }
+        }
         
         public GreenHouseViewModel(INavigation navigation)
         {
@@ -26,12 +32,12 @@ namespace SmartGreen.ViewModel
 
         public void TurnOnWaterFlow()
         {
-            if (estadoFlujo == "Iniciar riego")
+            if (EstadoFlujo == "Iniciar riego")
             {
-                estadoFlujo = "Apagar riego";
+                EstadoFlujo = "Apagar riego";
                 return;
             }
-            estadoFlujo = "Iniciar riego";
+            EstadoFlujo = "Iniciar riego";
         }
 
         public ICommand VolverCommand => new Command(async () => await Volver());

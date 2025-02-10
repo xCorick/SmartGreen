@@ -79,7 +79,7 @@
                     AbsoluteLayout.LayoutFlags="PositionProportional">
                 <StackLayout BackgroundColor="White"
                          >
-                    <Label Text="{Binding estadoFlujo}"
+                    <Label Text="{Binding EstadoFlujo}"
                        x:Name="BotonRiego"
                        FontAttributes="Bold"
                        FontSize="19"
