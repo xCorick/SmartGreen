@@ -4,42 +4,149 @@
              x:Class="SmartGreen.MenuInvernaderos"
              NavigationPage.HasNavigationBar="False"
              Title="Invernaderos">
-    
-        <FlyoutPage.Flyout>
-            <ContentPage Title="Menú">
-                <ScrollView>
-                    <StackLayout Padding="0">
 
-                        <Grid BackgroundColor="#DDE8D7" Padding="30">
-                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, *">
-                                <Image Source="perfil.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" />
-                                <VerticalStackLayout Padding="60,0,0,0">
-                                    <Label Text="Usuario" FontSize="18" FontAttributes="Bold"  />
-                                    <Label Text="contact@example.com" FontSize="14" />
-                                </VerticalStackLayout>
-                            </Grid>
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menú">
+            <ScrollView>
+                <StackLayout Padding="0" Spacing="0">
+
+                    <Grid BackgroundColor="#DDE8D7" Padding="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="perfil.png"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 HorizontalOptions="Start"
+                 Grid.Row="0"
+                 Grid.Column="0" />
+                        <VerticalStackLayout Padding="20,0,0,0"
+                               Grid.Row="0"
+                               Grid.Column="1">
+                            <Label Text="Usuario" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="contact@example.com" FontSize="14" />
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <VerticalStackLayout Padding="15,5" Spacing="15">
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="0" Grid.Column="0"
+                   Source="hogar.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="0" Grid.Column="1"
+                   Text="Inicio"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+
+                            <Image Grid.Row="1" Grid.Column="0"
+                   Source="hoja.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="1" Grid.Column="1"
+                   Text="Invernaderos"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+
+                            <Image Grid.Row="2" Grid.Column="0"
+                   Source="mas.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="2" Grid.Column="1"
+                   Text="Registrar invernadero"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+
+                            <Image Grid.Row="3" Grid.Column="0"
+                   Source="campana.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="3" Grid.Column="1"
+                   Text="Notificaciones"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+
+                            <Image Grid.Row="4" Grid.Column="0"
+                   Source="est.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="4" Grid.Column="1"
+                   Text="Estadísticas"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
                         </Grid>
+                    </VerticalStackLayout>
 
-                        <VerticalStackLayout Padding="15,5">
-                            
-                            <Button Text="Inicio" BackgroundColor="Transparent"  TextColor="Black" HorizontalOptions="Center"/>
-                            <Button Text="Invernaderos"  BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center"/>
-                            <Button Text="Registrar invernadero"  BackgroundColor="Transparent" TextColor="Black"/>
-                            <Button Text="Notificaciones"  BackgroundColor="Transparent" TextColor="Black"/>
-                            <Button Text="Estadísticas"  BackgroundColor="Transparent" TextColor="Black"/>
-                        </VerticalStackLayout>
+                    <BoxView HeightRequest="3"
+                 BackgroundColor="Gray"
+                 Opacity="0.5"
+                 Margin="10,140,0,0"/>
 
-                        <BoxView HeightRequest="3" BackgroundColor="Gray" Opacity="0.5" Margin="10,140,0,0"/>
+                    <VerticalStackLayout Padding="15,5" Spacing="20">
+                        <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Grid.Column="0"
+                   Source="usuario.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="0" Grid.Column="1"
+                   Text="Cuenta"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+                            <Image Grid.Row="1" Grid.Column="0"
+                   Source="flecha.png"
+                   HeightRequest="20" WidthRequest="20"
+                   VerticalOptions="Center"
+                   Margin="20,0,0,0"/>
+                            <Label Grid.Row="1" Grid.Column="1"
+                   Text="Salir"
+                   FontSize="16"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   Margin="50,0,0,0"/>
+                        </Grid>
+                    </VerticalStackLayout>
 
-                        <VerticalStackLayout Padding="15,5">
-                            <Button Text="Cuenta" BackgroundColor="Transparent" TextColor="Black"/>
-                            <Button Text="Salir" BackgroundColor="Transparent" TextColor="Black"/>
-                        </VerticalStackLayout>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </FlyoutPage.Flyout>
 
-                    </StackLayout>
-                </ScrollView>
-            </ContentPage>
-        </FlyoutPage.Flyout>
+
 
 
 
@@ -47,7 +154,6 @@
     <FlyoutPage.Detail>
         <ContentPage Title="Invernaderos">
             <Grid>
-                <!-- Capa de fondo, overlay y logo -->
                 <Grid>
                     <Image Source="fondo.jpg"
                        Scale="1.4"
@@ -70,7 +176,6 @@
                        Margin="0,30,0,0"/>
                 </Grid>
 
-                <!-- Contenido: botones de viveros -->
                 <ScrollView>
                     <VerticalStackLayout Padding="10" Spacing="20" Margin="0,260,0,0">
                         <Button BackgroundColor="White"
@@ -94,7 +199,6 @@
                     </VerticalStackLayout>
                 </ScrollView>
 
-                <!-- Botón flotante para registrar (convertido de Frame a Button) -->
                 <Button BackgroundColor="White"
                     CornerRadius="20"
                     Padding="5"
@@ -104,7 +208,7 @@
                     VerticalOptions="End"
                     Margin="20"
                     ImageSource="mas.png"
-                    TextColor="Black"
+                    TextColor="Black"/>
             </Grid>
         </ContentPage>
     </FlyoutPage.Detail>
