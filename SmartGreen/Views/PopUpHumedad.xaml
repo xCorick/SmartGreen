@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="SmartGreen.PopUpHumedad"
+    VerticalOptions="End"
+    >
+
+    <Frame x:Name="SheetContent"
+           BackgroundColor="White"
+           Padding="20"
+           CornerRadius="20"
+           HeightRequest="400"
+           VerticalOptions="End"
+           TranslationY="400"
+           HorizontalOptions="CenterAndExpand">
+        
+        <Grid x:Name="Overlay" BackgroundColor="Black" Opacity="1">
+            <!--<Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="CloseSheet"/>
+                </Grid.GestureRecognizers>-->
+
+            <VerticalStackLayout Padding="20" BackgroundColor="White">
+            <Label Text="Control de humedad" FontSize="20" HorizontalOptions="Center"/>
+            <Image Source="drop.png" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center"/>
+            <Label x:Name="HumidityLabel" Text="Humedad 45%" FontSize="16" HorizontalOptions="Center"/>
+            <Slider x:Name="HumiditySlider" Minimum="0" Maximum="100" Value="45"
+                    ValueChanged="OnSliderValueChanged"/>
+                <Button Text="Guardar" Clicked="CloseSheet"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Frame>
+</ContentView>
