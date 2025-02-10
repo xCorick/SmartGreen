@@ -8,5 +8,8 @@ namespace SmartGreen
             MainPage = new NavigationPage(new Login());
 
         }
+
+
+
     }
 }

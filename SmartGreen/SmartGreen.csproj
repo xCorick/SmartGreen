@@ -65,6 +65,11 @@
 
 	<ItemGroup>
 
+	  <MauiXaml Update="FlyoutInicio.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+
+
 	  <Compile Update="Views\GreenHouseView.xaml.cs">
 	    <DependentUpon>GreenHouseView.xaml</DependentUpon>
 	  </Compile>
@@ -86,6 +91,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MainMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MenuInvernaderos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Recovery.xaml">
