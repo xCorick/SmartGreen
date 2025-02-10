@@ -3,27 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartGreen.ViewGreenHouse"
              xmlns:views="clr-namespace:SmartGreen"
-             Title="ViewGreenHouse"
+             Title="ViewGreenHouse" BackgroundImageSource="hum.jpg" Scale="1"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="#deebd4">
     <ScrollView> 
     <AbsoluteLayout>
-            <Image Source="izquierda.png"
+            <Image Source="back.png"
                    WidthRequest="70"
-                   AbsoluteLayout.LayoutBounds="0.0, 0.02"
                    AbsoluteLayout.LayoutFlags="PositionProportional">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding VolverCommand}" ></TapGestureRecognizer>
                 </Image.GestureRecognizers>
             </Image>
         <Label 
-            Text="Monitoreo"
+            Text="Monitoreo" TextColor="#508029"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             Padding="0,24,0,0"
-            FontSize="26"
-            FontAttributes="Bold"
-            AbsoluteLayout.LayoutBounds="0.5, 0.01"
+            FontSize="35"
+            FontAttributes="Bold" FontFamily="bold" 
+            AbsoluteLayout.LayoutBounds="0.5, -0.01"
             AbsoluteLayout.LayoutFlags="PositionProportional"
             />
         <Label 
@@ -43,7 +42,7 @@
                HasShadow="False"
                AbsoluteLayout.LayoutBounds="0.5, 0.35, 250, 250"
                AbsoluteLayout.LayoutFlags="PositionProportional">
-                <Image Source="planta.png" Aspect="AspectFill"/>
+                <Image Source="plant.png" Aspect="AspectFill"/>
             </Frame>
 
             <!-- Marco circular (indicador de porcentaje) -->
@@ -72,7 +71,7 @@
                 FontSize="20"
                 AbsoluteLayout.LayoutBounds="0.5, 0.7"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="#81b442"/>
+                BackgroundColor="#9aa158"/>
             <Frame  CornerRadius="25"
                     WidthRequest="300"
                     AbsoluteLayout.LayoutBounds="0.5,0.95"
