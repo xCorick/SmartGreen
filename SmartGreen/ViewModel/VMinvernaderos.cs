@@ -23,7 +23,15 @@ internal class VMinvernaderos : BaseViewModel
         Invernaderos = new ObservableCollection<ViveroModel>
     {
     new ViveroModel { Nombre = "Invernadero Squish" },
-    new ViveroModel { Nombre = "Invernadero Orquidea"},
+       new ViveroModel { Nombre = "Invernadero Orquidea"},
+                new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+         new ViveroModel { Nombre = "Invernadero 2"},
+  new ViveroModel { Nombre = "Invernadero 2"},
     
     };
     }

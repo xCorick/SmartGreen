@@ -6,20 +6,6 @@
              >
 
 
-
-    <NavigationPage.TitleView   >
-        <Label Text="Lista de viveros"
-           FontSize="20"
-           FontAttributes="Bold"
-           TextColor="Black"
-           VerticalOptions="Center"
-           HorizontalOptions="Center"
-           />
-    </NavigationPage.TitleView>
-
-  
-
-
     <FlyoutPage.Flyout>
         <ContentPage Title="Menú">
             <ScrollView>
@@ -181,7 +167,8 @@
 
 
     <FlyoutPage.Detail>
-        <ContentPage Title="Invernaderos">
+        <ContentPage Title="Invernaderos"
+                     NavigationPage.HasNavigationBar="False">
             <Grid>
                 <Grid>
                     <Image Source="fondo.jpg"
