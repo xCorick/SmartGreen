@@ -232,7 +232,8 @@
                     VerticalOptions="End"
                     Margin="20"
                     ImageSource="mas.png"
-                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1"
                         Clicked="AddGreenHouse_Clicked"/>
             </Grid>
         </ContentPage>
