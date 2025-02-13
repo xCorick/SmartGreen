@@ -11,3 +11,9 @@ internal class ViveroModel
     public string? Nombre { get; set; }
 
 }
+internal class Usuario
+{
+    public string Correo { get; set; }
+
+    public string Name { get; set; }
+}

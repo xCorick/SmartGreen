@@ -5,7 +5,7 @@ namespace SmartGreen
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MenuInvernaderos());
+            MainPage = new NavigationPage(new Login());
 
         }
 

@@ -233,8 +233,8 @@
                     Margin="20"
                     ImageSource="mas.png"
                     BorderColor="Black"
-                    BorderWidth="1"
-                        Clicked="AddGreenHouse_Clicked"/>
+                    BorderWidth="0.7"
+                    Clicked="AddGreenHouse_Clicked"/>
             </Grid>
         </ContentPage>
     </FlyoutPage.Detail>

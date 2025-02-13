@@ -10,11 +10,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
+
 namespace SmartGreen.ViewModel;
 
 internal class VMinvernaderos : BaseViewModel
 {
     public ObservableCollection<ViveroModel> Invernaderos { get; set; }
+    public ObservableCollection<ViveroModel> Usuario { get; set; }
 
     public VMinvernaderos(INavigation navigation)
     {
@@ -22,17 +24,10 @@ internal class VMinvernaderos : BaseViewModel
         // Simulación de datos; aquí conectarías con tu base de datos
         Invernaderos = new ObservableCollection<ViveroModel>
     {
-    new ViveroModel { Nombre = "Invernadero Squish" },
-       new ViveroModel { Nombre = "Invernadero Orquidea"},
-                new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-         new ViveroModel { Nombre = "Invernadero 2"},
-  new ViveroModel { Nombre = "Invernadero 2"},
-    
+         new ViveroModel { Nombre = "Invernadero Squish" },
+         new ViveroModel { Nombre = "Invernadero Orquidea"},
+         
     };
+           
     }
 }
